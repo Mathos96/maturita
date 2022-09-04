@@ -1,7 +1,7 @@
 cena=int(input("Zadej cenu napoje: "))
 penize=int(input("Vložené peníze: "))
 
-bankovky=[5000,2000,1000,500,200,100,50,20,10,5,2,1]
+bankovky=[5000,2000,1000,500,200,100,50,20,10,5,2,1] #případně lze odebrat bankovky bez dalších změn
 
 if penize<cena:
     print("Nedostatek peněz!")
