@@ -32,10 +32,19 @@ for i in range(delka):
     print("Přelož: "+anglicky[a[0]])
     print()
     for j in range(3):
-        print(str(j+1)+": "+cesky[a[v[j]]])
+        print(chr(j+ord("a"))+": "+cesky[a[v[j]]])
     
-    ans=int(input("Odpověď: "))
-    if v[ans-1]==0:
+    ans=input("Odpověď: ")
+    while ans!="a" and ans!="b" and ans!="c":
+        print("Neplatný vtup!")
+        input()
+        print("Přelož: "+anglicky[a[0]])
+        print()
+        for j in range(3):
+            print(chr(j+ord("a"))+": "+cesky[a[v[j]]])
+        ans=input("Odpověď: ")
+
+    if v[ord(ans)-ord("a")]==0:
         body=body+1
         print("Správně!")
     else:
