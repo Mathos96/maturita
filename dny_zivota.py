@@ -8,7 +8,7 @@ r=int(x[4:])
 
 #1.1.1900 bylo pondeli btw!
 
-td=2 #tento den
+td=8 #tento den
 tm=9 #tento mesic
 tr=2022 #tento rok
 
